@@ -6,99 +6,163 @@
     <!-- agregar icono -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>Academia Bjj-LF</title>
-    <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/style.css" />
+
+
+ <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
   </head>
   <body>
-    <header class="header">
-      <nav>
-        home
+    <header class="w-full h-screen">     
+      <nav class="fixed top-0 text-white text-base flex        
+                  justify-between items-center w-full p-3">
+        <div class="font-black text-xl">
+          Carceglia Team
+        </div>
+        <div>          
+          <img src="" alt="hamburguesa">
+        </div>
+        <ul hidden uppercase>
+          <li>Home</li>
+          <li>About</li>
+          <li>Gallery</li>
+        </ul>
       </nav>
-      <div class="header__title">
-        <h1>
-          Carceglia Team <br><hr> <span>La Falda</span>       
+      <div class="header__title flex justify-center items-center border h-screen
+      bg-[center_left_-16rem] bg-cover bg-no-repeat bg-[url('./assets/headerMovil.png')]">
+
+        <h1 class="p-4 flex flex-col justify-center items-center text-blue-500 text-5xl text-center font-semibold uppercase leading-tight oswald">
+          Carceglia Team <br />
+          <hr class="bg-yellow-500 w-3/4 h-2 border-none m-4">
+          <span class="text-white text-center">La Falda</span>
         </h1>
       </div>
     </header>
-    <main class="main">
-      <h2 class="main__title">TE DAMOS LA BIENVENIDA</h2>
-      <section class="section__info">
-        <p>
+    <main>
+      <h2 class="text-blue-500 text-center p-4 font-medium uppercase text-2xl py-8 oswald">TE DAMOS LA BIENVENIDA</h2>
+      <section class="px-3 text-sm leading-snug font-medium roboto">
+        <p class=" py-2 "><b>
           El jiu-jitsu enfatiza las técnicas de lucha en el suelo y de agarre
           para vencer a un oponente, usando palancas y sumisión para controlar
-          al adversario. </p>
-          <p>
-              BJJ es conocido por su uso de dominio posicional,
-              bloqueos conjuntos y estrangulamientos para someter a un oponente. A
-              menudo se usa en competencias de artes marciales mixtas (MMA) y se ha
-              vuelto cada vez más popular como sistema de defensa personal.
-            </p>
-            <p>
-                El entrenamiento en Jiu-jitsu puede proporcionar una serie de beneficios,
-                que incluyen una mejor condición física, confianza en uno mismo,
-                disciplina y alivio del estrés. También puede ser una forma divertida
-                y desafiante de aprender nuevas habilidades y conectarse con otras
-                personas que comparten la pasión por las artes marciales.
-            </p>        
+          al adversario.
+        <p class="py-2">
+          BJJ es conocido por su uso de dominio posicional, bloqueos conjuntos y
+          estrangulamientos para someter a un oponente. A menudo se usa en
+          competencias de artes marciales mixtas (MMA) y se ha vuelto cada vez
+          más popular como sistema de defensa personal.
+        </p>
+        <p class="py-2">
+          El entrenamiento en Jiu-jitsu puede proporcionar una serie de
+          beneficios, que incluyen una mejor condición física, confianza en uno
+          mismo, disciplina y alivio del estrés. También puede ser una forma
+          divertida y desafiante de aprender nuevas habilidades y conectarse con
+          otras personas que comparten la pasión por las artes marciales.
+        </p>
       </section>
 
-      <section class="section__valores">
+      <section class="pt-12 px-3">
         <figure>
-          <img src="./assets/Sin título-2.jpg" alt="" />
+          <img src="./assets/fotoGrupal.jpg" alt="" />
         </figure>
-        <div>
+        <p class="pt-4 pb-8 comic">
           El jiu-jitsu promueve valores como el respeto, la humildad, la
           disciplina, el compañerismo y la ética de trabajo para crear un
           ambiente de aprendizaje y progreso constante en la práctica
-        </div>
+        </p>
       </section>
 
-      <section class="section__about">
-        <div class="about__skills">
-                <p>
-            El respeto es fundamental en el jiu-jitsu, tanto hacia los instructores como hacia los compañeros de entrenamiento. Se fomenta el respeto por las reglas, por los demás y por uno mismo.
-        </p>
-        <p>
-            Humildad: aunque el jiu-jitsu puede ser un deporte competitivo, se valora la humildad y la actitud de aprendizaje constante. Los estudiantes son animados a escuchar y aprender de sus compañeros ya mantener una mente abierta.
-        </p>
-        <p>
-            Disciplina: el jiu-jitsu requiere una gran disciplina y compromiso para mejorar en las técnicas y habilidades necesarias. Los estudiantes son animados a ser constantes y perseverantes en su entrenamiento.
-        </p>
-        <p>
-            Compañerismo: el jiu-jitsu es un deporte de contacto y los compañeros de entrenamiento son fundamentales para mejorar y progresar en la práctica. Por ello, se fomenta el compañerismo y la camaradería en la academia.
-        </p>
-        <p>
-            Ética de trabajo: el jiu-jitsu no es un deporte fácil, y requiere un esfuerzo constante y dedicación para alcanzar los objetivos. Se valora la ética de trabajo y la dedicación en el entrenamiento.
-        </p>
-        </div>
-    
-        <figure>
-            <img src="./assets/Sin título-1.jpg" alt="">
-        </figure>
+      <section class="bg-gray-200 py-4 comic">
+        <div class="px-3">
+          <p class="py-2">
+            El respeto es fundamental en el jiu-jitsu, tanto hacia los
+            instructores como hacia los compañeros de entrenamiento. Se fomenta
+            el respeto por las reglas, por los demás y por uno mismo.
+          </p>
+          <p class="py-2">
+            Humildad: aunque el jiu-jitsu puede ser un deporte competitivo, se
+            valora la humildad y la actitud de aprendizaje constante. Los
+            estudiantes son animados a escuchar y aprender de sus compañeros ya
+            mantener una mente abierta.
+          </p>
+          <p class="py-2">
+            Disciplina: el jiu-jitsu requiere una gran disciplina y compromiso
+            para mejorar en las técnicas y habilidades necesarias. Los
+            estudiantes son animados a ser constantes y perseverantes en su
+            entrenamiento.
+          </p>
+          <p class="py-2">
+            Compañerismo: el jiu-jitsu es un deporte de contacto y los
+            compañeros de entrenamiento son fundamentales para mejorar y
+            progresar en la práctica. Por ello, se fomenta el compañerismo y la
+            camaradería en la academia.
+          </p>
+          <p class="py-2">
+            Ética de trabajo: el jiu-jitsu no es un deporte fácil, y requiere un
+            esfuerzo constante y dedicación para alcanzar los objetivos. Se
+            valora la ética de trabajo y la dedicación en el entrenamiento.
+          </p>
+
+          <figure class="pt-16">
+            <img src="./assets/maxiCesar.jpg" alt="">
+          </figure>
+        </div>      
       </section>
-      <section>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+
+      <section class="px-3
+      py-4 grid gap-4">
+        <div>
+          <img src="./assets/grupal2.jpg" alt="">
+        </div>
+        <div>
+          <img src="./assets/cesarAriel.jpg" alt="">
+        </div>
+        <div>
+          <img src="./assets/espaldas.jpg" alt="">
+        </div>
+        <div>
+          <img src="./assets/cesarCarla.jpg" alt="">
+        </div>
+        <div>
+          <img src="./assets/maxiCesar2.jpg" alt="">
+        </div>
+
+        <div class="mb-8 w-full">
+          <p class="uppercase py-2">contacto: 3548 63-5002</p>
+          <h3 class="py-2 font-semibold text-xl pacifico">Maximiliano Ivan Zalesny </h3>
+          <p class="py-2 text-xl  italic caveat">Faixa Marron 2do grau.</p>
+          <a class="underline text-violet-900 font-semibold inline w-full text-xl break-all open" href="http://www.instagram.com/maxizalesny/" target="_blank" rel="noopener noreferrer">www.instagram.com/maxizalesny/ </a>
+        </div>
+        <div> 
+          <img src="./assets/grupal3.jpg" alt="">
+        </div>
+        <div>
+          <img src="./assets/clase.jpg" alt="">
+        </div>
+        <div class="flex flex-col gap-2 overflow-hidden mb-8" ><a href="https://www.instagram.com/carceglia_team_la_falda/" target="_blank" rel="noopener noreferrer">
+          <i class='bx bxl-instagram text-2xl text-white bg-red-500 w-7 h-7 rounded-full flex justify-center items-center mx-auto my-8' ></i>
+
+        </a>
+
+          <a class="border p-2 underline" href="https://www.instagram.com/carceglia_team_la_falda/" target="_blank" rel="noopener noreferrer">www.instagram.com/carceglia_team_la_falda/</a>
+
+          <a class="border h-24 flex flex-col justify-between p-2" href="http://" target="_blank" rel="noopener noreferrer">          
+          <span class="vBSm9c">
+            <span">CEF · Pres. Arturo Illia 522, La Falda, Córdoba, Argentina</span><br>
+            <span>★★★★★ · Gym</span>
+          </span>
+        </a>
+        </div>
+        <div>
+          <img src="./assets/maxiCesar2.jpg" alt="">
+        </div>
+        <div class="container">
+          <iframe class="w-full h-32" src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d1708.2597339560893!2d-64.477442!3d-31.095291!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDA1JzQzLjQiUyA2NMKwMjgnMzguNyJX!5e0!3m2!1ses!2sus!4v1688310055673!5m2!1ses!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </section>
     </main>
     <footer>
-        <div>Carceglia team <span>La Falda</span></div>
-        <div>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-            <div>
-                
-            </div>
-        </div>
+      <p class="text-xs text-center bg-gray-900 text-white">Carceglia Team La Falda. All rights reserved.</p>
     </footer>
   </body>
 </html>
