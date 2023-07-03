@@ -34,6 +34,13 @@ div img{
   object-fit: cover;
 }
 .bg-fix{
-background-color: #423f3f41;
+background-color: #423f3fa6;
 backdrop-filter: blur(5px);
+}
+:target::before {
+  content: "";
+  display: block;
+  height: 60px; /* Altura de la navegación */
+  margin-top: 1px; /* Valor negativo igual a la altura de la navegación */
+  visibility: hidden;
 }

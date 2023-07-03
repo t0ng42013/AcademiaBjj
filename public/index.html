@@ -19,14 +19,14 @@
                      sm:text-2xl">
           Carceglia Team
         </div>
-        <div class="sm:hidden">          
-          <i class='bx bx-menu-alt-right text-3xl'></i>
+        <div id="menu" class="sm:hidden">          
+          <i class='bx bx-menu-alt-right text-3xl cursor-pointer'></i>
         </div>
-        <ul class="hidden uppercase 
-                  sm:flex gap-4 font-semibold lg:gap-8">
-          <li><a href="#inicio">Inicio</a></li>
-          <li>About</li>
-          <li><a class="scroll-smooth" href="#contacto">contacto</a></li>
+        <ul id="menu-list" class="bg-fix absolute top-12 left-0 text-center w-full h-screen uppercase  overflow-hidden hidden
+                  sm:flex gap-4 sm:bg-transparent sm:backdrop-blur-none sm:static sm:w-auto sm:h-auto font-semibold lg:gap-8">
+          <li><a class="p-2 inline-block menu-item sm:" href="#inicio">Inicio</a></li>
+          <li><a class="p-2 inline-block menu-item" href="#">About</a></li>
+          <li><a class="p-2 inline-block menu-item" class="scroll-smooth" href="#contacto">contacto</a></li>
         </ul>
       </nav>
       <div class="header__title flex justify-center items-center border h-screen
