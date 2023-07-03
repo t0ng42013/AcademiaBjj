@@ -8,31 +8,31 @@
     <title>Academia Bjj-LF</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/style.css" />
-
-
- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
+
   <body>
     <header class="w-full h-screen">     
-      <nav class="fixed top-0 text-white text-base flex        
-                  justify-between items-center w-full p-3">
-        <div class="font-black text-xl">
+      <nav class="fixed top-0 text-white text-base flex justify-between items-center w-full p-3 
+                  sm:p-4">
+        <div class="font-black text-xl
+                     sm:text-2xl">
           Carceglia Team
         </div>
-        <div>          
+        <div class="sm:hidden">          
           <i class='bx bx-menu-alt-right text-3xl'></i>
         </div>
-        <ul hidden uppercase>
-          <li>Home</li>
+        <ul class="hidden uppercase 
+                  sm:flex gap-4 font-semibold lg:gap-8">
+          <li><a href="#inicio">Inicio</a></li>
           <li>About</li>
-          <li>Gallery</li>
+          <li><a class="scroll-smooth" href="#contacto">contacto</a></li>
         </ul>
       </nav>
       <div class="header__title flex justify-center items-center border h-screen
-      bg-[center_left_-16rem] bg-cover bg-no-repeat bg-[url('./assets/headerMovil.png')]">
+      bg-[center_left_-16rem] bg-cover bg-no-repeat bg-[url('./assets/headerMovil.png')] lg:bg-[center_left_-1rem]">
 
-        <h1 class="p-4 flex flex-col justify-center items-center text-blue-500 text-5xl text-center font-semibold uppercase leading-tight oswald">
+        <h1 class="p-4 flex flex-col justify-center items-center text-blue-500 text-5xl text-center font-semibold uppercase leading-tight oswald lg:text-6xl">
           Carceglia Team <br />
           <hr class="bg-yellow-500 w-3/4 h-2 border-none m-4">
           <span class="text-white text-center">La Falda</span>
@@ -40,19 +40,20 @@
       </div>
     </header>
     <main>
-      <h2 class="text-blue-500 text-center p-4 font-medium uppercase text-2xl py-8 oswald">TE DAMOS LA BIENVENIDA</h2>
-      <section class="px-3 text-sm leading-snug font-medium roboto">
-        <p class=" py-2 "><b>
+      <h2 id="inicio" class="text-blue-500 text-center p-4 font-medium uppercase text-2xl py-8 oswald lg:text-5xl lg:py-16">TE DAMOS LA BIENVENIDA</h2>
+      <section class="px-3 text-sm leading-snug font-medium roboto
+                     sm:px-24 lg:text-base">
+        <p class=" py-2 sm:4 "><b>
           El jiu-jitsu enfatiza las técnicas de lucha en el suelo y de agarre
           para vencer a un oponente, usando palancas y sumisión para controlar
           al adversario.
-        <p class="py-2">
+        <p class="py-2 sm:4">
           BJJ es conocido por su uso de dominio posicional, bloqueos conjuntos y
           estrangulamientos para someter a un oponente. A menudo se usa en
           competencias de artes marciales mixtas (MMA) y se ha vuelto cada vez
           más popular como sistema de defensa personal.
         </p>
-        <p class="py-2">
+        <p class="py-2 sm:4">
           El entrenamiento en Jiu-jitsu puede proporcionar una serie de
           beneficios, que incluyen una mejor condición física, confianza en uno
           mismo, disciplina y alivio del estrés. También puede ser una forma
@@ -61,7 +62,8 @@
         </p>
       </section>
 
-      <section class="pt-12 px-3">
+      <section class="pt-12 px-3
+                      sm:px-24">
         <figure>
           <img src="./assets/fotoGrupal.jpg" alt="" />
         </figure>
@@ -73,8 +75,9 @@
       </section>
 
       <section class="bg-gray-200 py-4 comic">
-        <div class="px-3">
-          <p class="py-2">
+        <div class="px-3 sm:px-24 lg:flex">
+          <div>
+          <p class="py-2 ">
             El respeto es fundamental en el jiu-jitsu, tanto hacia los
             instructores como hacia los compañeros de entrenamiento. Se fomenta
             el respeto por las reglas, por los demás y por uno mismo.
@@ -102,15 +105,14 @@
             esfuerzo constante y dedicación para alcanzar los objetivos. Se
             valora la ética de trabajo y la dedicación en el entrenamiento.
           </p>
-
-          <figure class="pt-16">
+          </div>
+          <figure class="pt-16 lg:pt-0">
             <img src="./assets/maxiCesar.jpg" alt="">
           </figure>
         </div>      
       </section>
 
-      <section class="px-3
-      py-4 grid gap-4">
+      <section class="px-3 py-4 grid gap-4 sm:px-36 lg:grid-cols-3">
         <div>
           <img src="./assets/grupal2.jpg" alt="">
         </div>
@@ -120,44 +122,52 @@
         <div>
           <img src="./assets/espaldas.jpg" alt="">
         </div>
-        <div>
+        <div >
           <img src="./assets/cesarCarla.jpg" alt="">
         </div>
-        <div>
+        <div >
           <img src="./assets/maxiCesar2.jpg" alt="">
         </div>
 
-        <div class="mb-8 w-full">
-          <p class="uppercase py-2">contacto: 3548 63-5002</p>
-          <h3 class="py-2 font-semibold text-xl pacifico">Maximiliano Ivan Zalesny </h3>
-          <p class="py-2 text-xl  italic caveat">Faixa Marron 2do grau.</p>
-          <a class="underline text-violet-900 font-semibold inline w-full text-xl break-all open" href="http://www.instagram.com/maxizalesny/" target="_blank" rel="noopener noreferrer">www.instagram.com/maxizalesny/ </a>
+        <div id="contacto" class="mb-8 w-full lg:mt-8">
+          <p class="uppercase py-2 sm:py-4 sm:text-xl">contacto: 3548 63-5002</p>
+          <h3 class="py-2 font-semibold text-xl pacifico sm:py-4 sm:text-2xl sm:font-medium">Maximiliano Ivan Zalesny </h3>
+          <p class="py-2 text-xl  italic caveat sm:py-4 sm:text-3xl sm:font-medium">Faixa Marron 2do grau.</p>
+          <a class="underline text-violet-900 font-semibold inline w-full text-xl break-all open lg:hidden" href="http://www.instagram.com/maxizalesny/" target="_blank" rel="noopener noreferrer">www.instagram.com/maxizalesny/ </a>
+
+          <div class="hidden lg:block">
+            <a href="https://www.instagram.com/carceglia_team_la_falda/" target="_blank" rel="noopener noreferrer">
+          <i class='bx bxl-instagram text-4xl text-white bg-red-500 w-12 h-12 rounded-full flex justify-center items-center  my-2'></i>
+        </a>
+          </div>
+
         </div>
-        <div> 
+        <div class="lg:col-start-3 lg:col-end-4 lg:row-start-2 lg:row-end-4 "> 
           <img src="./assets/grupal3.jpg" alt="">
         </div>
-        <div>
+        <div class="lg:col-start-2 lg:row-start-3">
           <img src="./assets/clase.jpg" alt="">
         </div>
-        <div class="flex flex-col gap-2 overflow-hidden mb-8" ><a href="https://www.instagram.com/carceglia_team_la_falda/" target="_blank" rel="noopener noreferrer">
+        <!-- **** -->
+        <div class="flex flex-col gap-2 overflow-hidden mb-8 lg:hidden" ><a href="https://www.instagram.com/carceglia_team_la_falda/" target="_blank" rel="noopener noreferrer">
           <i class='bx bxl-instagram text-5xl text-white bg-red-500 w-16 h-16 rounded-full flex justify-center items-center mx-auto my-8' ></i>
 
         </a>
 
           <a class="border p-2 underline" href="https://www.instagram.com/carceglia_team_la_falda/" target="_blank" rel="noopener noreferrer">www.instagram.com/carceglia_team_la_falda/</a>
 
-          <a class="border h-24 flex flex-col justify-between p-2" href="http://" target="_blank" rel="noopener noreferrer">          
-          <span class="vBSm9c">
+          <a class="border h-28 flex flex-col justify-between p-2" href="http://" target="_blank" rel="noopener noreferrer">          
+          <span>
             <span">CEF · Pres. Arturo Illia 522, La Falda, Córdoba, Argentina</span><br>
             <span>★★★★★ · Gym</span>
           </span>
         </a>
         </div>
-        <div>
+        <div class="lg:col-start-1 lg:row-start-3">
           <img src="./assets/maxiCesar2.jpg" alt="">
         </div>
-        <div class="container">
-          <iframe class="w-full h-32" src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d1708.2597339560893!2d-64.477442!3d-31.095291!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDA1JzQzLjQiUyA2NMKwMjgnMzguNyJX!5e0!3m2!1ses!2sus!4v1688310055673!5m2!1ses!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="container lg:col-span-2 lg:mt-8">
+          <iframe class="w-full h-32 sm:h-48 sm:py-4 lg:h-full" src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d1708.2597339560893!2d-64.477442!3d-31.095291!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDA1JzQzLjQiUyA2NMKwMjgnMzguNyJX!5e0!3m2!1ses!2sus!4v1688310055673!5m2!1ses!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </section>
     </main>
