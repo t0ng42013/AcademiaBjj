@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- agregar icono -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./assets/brazilian-jiu-jitsu-logo.png" type="image/x-icon" />
     <title>Academia Bjj-LF</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/style.css" />
@@ -25,7 +24,7 @@
         <ul id="menu-list" class="bg-fix absolute top-12 left-0 text-center w-full h-screen uppercase  overflow-hidden hidden
                   sm:flex gap-4 sm:bg-transparent sm:backdrop-blur-none sm:static sm:w-auto sm:h-auto font-semibold lg:gap-8">
           <li><a class="p-2 inline-block menu-item sm:" href="#inicio">Inicio</a></li>
-          <li><a class="p-2 inline-block menu-item" href="#">About</a></li>
+          <li><a class="p-2 inline-block menu-item" href="#fotos">Fotos</a></li>
           <li><a class="p-2 inline-block menu-item" class="scroll-smooth" href="#contacto">contacto</a></li>
         </ul>
       </nav>
@@ -112,7 +111,7 @@
         </div>      
       </section>
 
-      <section class="px-3 py-4 grid gap-4 sm:px-36 lg:grid-cols-3">
+      <section id="fotos" class="px-3 py-4 grid gap-4 sm:px-36 lg:grid-cols-3">
         <div>
           <img src="./assets/grupal2.jpg" alt="">
         </div>
@@ -171,9 +170,11 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="relative bg-gray-900 flex items-center justify-center">
       <p class="text-xs text-center bg-gray-900 text-white">Carceglia Team La Falda. All rights reserved.</p>
+         <a href="https://gaston-nucba.vercel.app/" target="_blank" rel="noopener noreferrer"><img class="w-8 ml-2"  src="./assets/logosm.png" alt=""></a>
     </footer>
     <script src="./assets/main.js"></script>
   </body>
 </html>
+
